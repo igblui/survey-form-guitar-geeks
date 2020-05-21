@@ -1,0 +1,293 @@
+
+<<!DOCTYPE html>
+<html lang="en">
+ <head>
+     
+     <style>
+
+         body{background-color: #111;
+               
+         }
+         
+         
+         .text-area{
+  margin-left:4em;
+  height:6em;
+  width:25em;
+}
+         
+          
+       
+         #survey{
+             position: absolute;
+           
+  top:0;
+  left:0;
+  width:100%;
+  height:71em;
+  margin:none;       
+  padding:0;
+ 
+ 
+         }
+         
+         p {
+  font-size: 18px;
+             line-height: 29px;
+ word-spacing: normal;
+             
+}
+         
+         #title{
+             text-align:center;
+  font-size:60px;
+  font-family: 'Bowlby One SC', cursive;
+             color: #fff;
+             font-weight: bold;
+             
+           
+         }
+         
+         #description{
+             
+           text-align:center;
+             position:relative;
+  font-size:16px;
+             color:#fff;
+  font-family:"Times New Roman", Times, serif; 
+             border-bottom: 1px dotted #777a7b;
+             border-top: 1px dotted #777a7b;
+         }
+         
+         .form-inner{
+             padding-top:1em;
+         }
+         
+         .marg{
+             margin-top:30px;
+         }
+         
+          .decor{background-color: rgb(217, 217, 217);
+         border-radius: 15px;
+        }  
+        
+
+         #survey-form{
+  width:40em;
+  height:860px; 
+  margin:auto;
+  margin-top:2em;
+           
+                        
+}
+   
+         
+#name ,#email ,#number,#dropdown {
+  margin-left:5em;
+  margin-top:1em;
+  height:34px;
+  width:26em;
+  border:none;
+  padding: 10px ;
+    
+}
+         
+      
+         input[type=radio]{
+             display: inline-block;
+             margin-left:5em;
+         }
+         
+
+#name-label, #email-label,#number-label ,#gender-label, #dropdown-label , #select-label,#comment-label {
+  margin-left:4em; 
+   
+    line-height: normal;
+    
+}
+     
+         #first-check , #second-check , #third-check ,#fourth-check,#fifth-check,#sixth-check {
+             margin-left:5em;}
+             
+             
+             
+             #submit{
+  margin-left:15.5em;
+  margin-top:2em;
+                 margin-bottom: 3em;
+  height:45px;
+  width:10em;
+  border-radius:50px;
+  border:none;
+  background-color: #52be80;
+  color:#fff;
+  cursor:pointer;
+     font-weight: bold;
+    font-family:"Times New Roman", Times, serif; 
+    font-size: 16px;
+}
+#submit:hover{
+  background:#eafaf1;
+  color:#cb4335;
+   
+}
+      
+     </style>
+
+    </head>
+    
+    
+    <body>
+        
+        <div class="container">
+        <div id="survey">
+            
+        <h1 id="title">Guitar Geeks</h1>
+         
+        <p id="description">Thank you for signing up at Guitar Geeks! Tell us more about yourself.  </p>
+      
+    
+        <form id="survey-form">
+            
+            <div class="decor">
+            
+            
+        <div class="form-inner">
+            
+            <div class="marg">
+            
+            <label id="email-label">Email</label><br/>
+               <input type="email" placeholder="Enter your e-mail" id="email" required><br/>
+               
+            </div> 
+            
+            
+           <div class="marg">
+            
+            <label for="name" id="name-label">Name</label><br/>
+               <input type="text" placeholder="Enter your name" id="name" required><br/>
+               
+            </div> 
+            
+             <div class="marg">
+            
+            <label id="number-label">Age</label><br/>
+               <input type="number" placeholder="Age" id="number" min="12" max="70" required><br/>
+               
+            </div> 
+            
+            
+            <div class="marg">
+                <div id="button-area">
+                
+                <label id="gender-label">Gender:</label><br/><br>
+                    <input type="radio" class="radio" name="gender" value="male"> Male<br/>
+                    <input type="radio" class="radio" name="gender" value="female"> Female<br/>
+                    <input type="radio" class="radio" name="gender" value="other"> Other<br/>
+                   
+                </div>
+            </div>
+                </div>
+            
+            
+            <div class="marg">
+          
+                <label id="select-label">I am...</label><br/><br>
+                
+                 <input type="checkbox" id="first-check" name="am1" value="prof">a professional musician<br/>   
+                 
+                
+                 <input type="checkbox" id="second-check" name="am2" value="hobby">a hobbyist/amateur musician<br/>   
+                    
+               
+                 <input type="checkbox" id="third-check" name="am3" value="learn">starting to learn guitar<br/>   
+                  
+                 <input type="checkbox" id="fourth-check" name="am4" value="other">other<br>   
+                  
+             
+                    </div>
+                    
+                    
+                     <div class="marg">
+               
+                <label id="select-label">I...</label><br/><br>
+                
+                 <input type="checkbox" id="first-check" name="i1" value="own">own several electric guitars<br/>   
+                    
+                 <input type="checkbox" id="second-check" name="i2" value="electric">own one electric guitar<br/>   
+                    
+                 <input type="checkbox" id="third-check" name="i3" value="consider">am considering purchasing an electric guitar<br/>   
+                  
+                    </div>
+                
+           <div class="marg">
+                
+            <label id="dropdown-label">In terms of look and feel, I tend to prefer...</label><br/>
+               <select id="dropdown" name="guitars">
+                   <option value="fender">Fender</option>
+                   <option value="gibson">Gibson</option>
+                   <option value="gretsch">Gretsch</option>
+                   <option value="prs">PRS</option>
+                   <option value="other">Other</option>
+                   </select><br/>
+               
+            </div> 
+                
+                <div class="marg">
+                
+            <label id="dropdown-label">In terms of sound, I tend to prefer...</label><br/>
+               <select id="dropdown" name="guitars">
+                   <option value="fender">Fender</option>
+                   <option value="gibson">Gibson</option>
+                   <option value="gretsch">Gretsch</option>
+                   <option value="prs">PRS</option>
+                   <option value="other">Other</option>
+                   </select><br/>
+               
+                </div>
+                
+                
+             <div class="marg">
+          
+                <label id="select-label">My main consideration when purchasing an electric guitar is...</label><br/><br>
+                
+           
+                 <input type="checkbox" id="first-check" name="main1" value="material">material<br/>   
+                 <input type="checkbox" id="second-check" name="main2" value="play">playability<br/> 
+                
+                 <input type="checkbox" id="third-check" name="main3" value="sound">sound<br/>   
+                  
+                 <input type="checkbox" id="fourth-check" name="main4" value="cost">cost<br/>   
+                  
+                 <input type="checkbox" id="fifth-check" name="main5" value="aesthetics">aesthetics<br/>   
+                   
+                 <input type="checkbox" id="sixth-check" name="main6" value="other">other<br/>   
+                   
+                    </div> 
+                
+                
+          
+            <div class="marg">
+                <label id="comment-label">What makes a great guitar for you?</label><br/><br>
+               
+                <textarea class="text-area" placeholder="Enter your comment here..." ></textarea><br/><br><br>
+                
+            </div>
+            
+                
+               </div>
+        
+                <div id="submit-button">
+        
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+        
+                </div>
+        
+               
+           </form> 
+       
+        </div>
+    </div>
+    </body>
+        
+</html>
